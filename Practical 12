@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical No. 12 - Bootstrap Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for minor adjustments */
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x500/007bff/ffffff?text=First+Slide" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Welcome to Our Site</h1>
+                    <p>Building beautiful websites with Bootstrap components.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x500/6c757d/ffffff?text=Second+Slide" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Responsive Design</h1>
+                    <p>It works perfectly on mobile, tablet, and desktop.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container my-5" id="features">
+        <h2 class="text-center mb-4">Our Features</h2>
+        <div class="row g-4"> <div class="col-md-4"> <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Feature 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern UI</h5>
+                        <p class="card-text">Clean and simple components that follow modern design trends.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Feature 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fast Loading</h5>
+                        <p class="card-text">Optimized code ensures your users don't have to wait.</p>
+                        <a href="#" class="btn btn-success">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Feature 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Grid Layout</h5>
+                        <p class="card-text">Utilizing the powerful Bootstrap 12-column grid system.</p>
+                        <a href="#" class="btn btn-danger">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2026 Practical Assignment. All Rights Reserved.</p>
+            <p>Designed  using Bootstrap.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
